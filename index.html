@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            border: 1px solid #000000;
+        }
+
+            li a {
+                display: block;
+                padding: 8px;
+                background-color: #ffffff;
+            }
+
+                li a:hover {
+                    background-color: #d0d3d4;
+                }
+
+        .active {
+            background-color: #d0d3d4;
+            padding-left: 75px;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background-image: url('soundcheck_logo_small.png');
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 10px;
+            text-align: center;
+            background: #e7e8e8;
+            height: 150px;
+        }
+
+            .header h1 {
+                font-size: 50px;
+            }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .album {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #e7e8e8;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .text {
+            font-size: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="image">
+                <img src=".\soundcheck_logo_clear.png" , width="100" , height="100">
+            </div>
+            <div class="text">
+                <h2><p style="font-family:'Swis721 BdOul BT'">Soundcheck</p></h2>
+                <h5><p style="font-family: Monaco,monospace">A hub for music in West Lafayette</p></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a style="font-family: Monaco,monospace" , href="index.html">Home</a></li>
+                <li><a style="font-family: Monaco,monospace" , href="newzines.html">Zines</a></li>
+                <li><a style="font-family: Monaco,monospace" , href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2><p style="font-family:'Swis721 BdOul BT'">Welcome!</p></h2>
+                <h5><p style="font-family: Monaco,monospace">A new place for Soundcheck, Mar 2, 2025<p></h5>
+                <p style="font-family: Monaco,monospace">
+                    Soundcheck has a website now!<br>
+                    It'll stay updated it with Soundcheck stuff from the account and zine, so there's another place for keeping up with what's going on.<br>
+                    I might put some other stuff up on here too so bookmark and stay tuned.
+                <p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2><p style="font-family: 'Swis721 BdOul BT'">New Music!<p></h2>
+                <div class="album">
+                    <img src=".\bats_ep.jpg" , width="100%" , height="100%">
+                    <a style="font-family: Monaco,monospace" , href="https://open.spotify.com/album/2pEEQAhgSueK4O2I5cxtyh?si=sF4BWOzoSQWyUbgSIpuiVg">EP - Bats Outta Hell</a>
+                </div>
+                <div class="album">
+                    <img src=".\lawndarts_ep.jpg" , width="100%" , height="100%">
+                    <a style="font-family: Monaco,monospace" , href="https://open.spotify.com/album/6oKl03B9XEZxpEUolDuJ6q?si=Z2Eu1zTSSzKwnjd2mUmX6g
+">The Lawn Darts - The Lawn Darts (EP)</a>
+                </div>
+                <div class="album">
+                    <img src=".\psychosis.jpg" , width="100%" , height="100%">
+                    <a style="font-family: Monaco,monospace" , href="https://open.spotify.com/album/4S7HE6D4OpetdGOc0SOnyc?si=YT6EC5LrRpynR57a6a9izA
+">Too Much Talk - Psychosis (Single)</a>
+                </div>
+                <div class="card">
+                    <h3><span style="font-family:'Swis721 BdOul BT'">Contact</span></h3>
+                    <p style="font-family: Monaco,monospace"><b>Email:</b> soundcheckwl@gmail.com</p>
+                    <p style="font-family: Monaco,monospace">You can also find us <a href="https://www.instagram.com/soundcheck_wl/" target="_blank">here</a> for weekly shows and updates!<p>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>
